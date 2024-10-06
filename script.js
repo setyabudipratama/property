@@ -1,3 +1,4 @@
+// fungsi untuk hasil search
 function showPage(house) {
     const page = document.getElementById('house');
     page.classList.remove('active');
@@ -9,4 +10,12 @@ function showPage(house) {
 const search = document.getElementById('search');
 search.addEventListener('click', function() {
     showPage('house');
+});
+
+// fungsi untuk see more halaman house
+const seeMore = document.querySelectorAll('#house .btn');
+seeMore.forEach(btn => {
+    btn.addEventListener('click', () => {
+        window.location.href = "house.html";
+    });
 });
