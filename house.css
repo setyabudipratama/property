@@ -27,6 +27,11 @@ body {
     padding: 5px 50px;
 }
 
+/* class fa-bars */
+.navbar .fa-bars {
+    color: var(--white);
+}
+
 .navbar .fa-house-chimney {
     color: var(--white);
 }
@@ -194,10 +199,6 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-
-    .navbar .fa-bars {
-        color: var(--white);
-    }
 
     #carousel {
         min-height: 50vh;
