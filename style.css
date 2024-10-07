@@ -27,6 +27,11 @@ body {
     padding: 5px 50px;
 }
 
+/* class fa-bars */
+.navbar .fa-bars {
+    color: var(--white);
+}
+
 .navbar .fa-house-chimney {
     color: var(--white);
 }
@@ -644,10 +649,6 @@ footer .sosial i {
 
 
 @media screen and (max-width: 768px) {
-
-    .navbar .fa-bars {
-        color: var(--white);
-    }
 
     header .container .menu {
         border-radius: 10px;
