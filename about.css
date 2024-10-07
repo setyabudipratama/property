@@ -85,7 +85,7 @@ header {
 .triangle-top {
     position: absolute;
     top: 0;
-    left: 40%;
+    right: 0;
     width: 0;
     height: 0;
     /* border-top: 500px solid transparent; */
@@ -97,12 +97,12 @@ header {
 .triangle-bottom {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 0;
     width: 0;
     height: 0;
     /* border-top: 500px solid transparent; */
-    border-bottom: 800px solid transparent;
-    border-left: 2150px solid blue;
+    border-bottom: 250px solid transparent;
+    border-left: 550px solid blue;
     transform: rotateY(180deg);
 }
 
@@ -126,6 +126,11 @@ header .container .desc {
     height: auto;
     position: relative;
     top: 5%;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
 }
 
 header .container h1 {
@@ -143,6 +148,7 @@ header .container h2 {
     line-height: 50px;
     cursor: default;
     font-weight: bold;
+    max-width: 550px;
 }
 
 header .container p {
@@ -151,7 +157,7 @@ header .container p {
     margin: 0;
     width: 200px;
     position: relative;
-    left: 67%;
+    right: 0;
     cursor: default;
 }
 
@@ -166,7 +172,7 @@ header #btn {
     background-color: var(--black);
     position: relative;
     top: 20%;
-    right: 5%;
+    right: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -248,24 +254,24 @@ section {
     .triangle-top {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 0;
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 600px solid transparent;
-        border-left: 430px solid blue;
+        border-left: 432px solid blue;
         transform: rotateY(180deg);
     }
     
     .triangle-bottom {
         position: absolute;
         top: 50%;
-        left: 30%;
+        right: 0;
         width: 0;
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 410px solid transparent;
-        border-left: 301px solid blue;
+        border-left: 303px solid blue;
         transform: rotateY(180deg);
     }
 
@@ -285,21 +291,22 @@ section {
         font-size: 1.2rem;
         position: relative;
         top: 10px;
-        right: 10%;
+        right: 5%;
     }
 
     header .container h2 {
         font-size: 1.5rem;
         position: relative;
         top: 0;
-        right: 0;
+        right: 5%;
+        width: 350px;
     }
 
     header .container p {
         font-size: 1rem;
         position: relative;
         top: 0;
-        left: 35%;
+        right: 5%;
     }
 
     header #btn {
@@ -316,7 +323,7 @@ section {
     .triangle-top {
         position: absolute;
         top: 0;
-        left: 20%;
+        right: 0;
         width: 0;
         height: 0;
         /* border-top: 500px solid transparent; */
@@ -328,12 +335,12 @@ section {
     .triangle-bottom {
         position: absolute;
         top: 50%;
-        left: 62%;
+        right: 0;
         width: 0;
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 510px solid transparent;
-        border-left: 294px solid blue;
+        border-left: 394px solid blue;
         transform: rotateY(180deg);
     }
 
@@ -348,7 +355,7 @@ section {
         font-size: 2rem;
         position: relative;
         top: 0;
-        left: 28%;
+        right: 4%;
         width: 400px;
     }
 
@@ -356,11 +363,12 @@ section {
         font-size: 1rem;
         position: relative;
         top: 0;
-        left: 63%;
+        right: 4%;
     }
 
     header #btn {
         position: relative;
-        top: 35%;
+        top: 45%;
+        right: 5%;
     }
 }
