@@ -596,6 +596,7 @@ footer .contact {
 footer .contact h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -624,6 +625,7 @@ footer .sosial {
 footer .sosial h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -751,18 +753,31 @@ footer .sosial i {
         width: 100%;
         height: auto;
         margin: 0;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 5px;
+    }
+
+    footer .cipta {
+        width: 40%;
+    }
+
+    footer .cipta img {
+        width: 45px;
+        height: 45px;
     }
 
     footer .cipta h5 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     footer .contact,
     footer .sosial {
         gap: 0;
+        width: 35%;
     }
 
     footer span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
