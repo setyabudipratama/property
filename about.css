@@ -1,0 +1,366 @@
+:root {
+    --white: #e6e6e6;
+    --black: #151515;
+    --blue: #0000ff;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid var(--black); */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--blue);
+    z-index: 1000;
+    padding: 5px 50px;
+}
+
+.navbar .fa-house-chimney {
+    color: var(--white);
+}
+
+.navbar .fa-bars {
+    color: var(--white);
+}
+
+/* class nav-link */
+.navbar .nav-link {
+    color: var(--white);
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* class active */
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* class btn */
+.navbar .btn {
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 100px;
+    box-shadow: 5px 5px 10px var(--black);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: scale(1.1);
+    border: none;
+}
+
+/* halaman header */
+header {
+    width: 100%;
+    height: 92vh;
+    background: url('gambar/property.jpg') no-repeat center center/cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.triangle-top {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 0;
+    height: 0;
+    /* border-top: 500px solid transparent; */
+    border-bottom: 500px solid transparent;
+    border-left: 800px solid blue;
+    transform: rotateY(180deg);
+}
+
+.triangle-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* border-top: 500px solid transparent; */
+    border-bottom: 800px solid transparent;
+    border-left: 2150px solid blue;
+    transform: rotateY(180deg);
+}
+
+header .container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: end;
+    /* background-color: var(--blue);
+    border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%; */
+    position: relative;
+    top: 0;
+    left: 25%;
+}
+
+header .container .desc {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 5%;
+}
+
+header .container h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+header .container h2 {
+    font-size: 2.5rem;
+    font-family: pacifico;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 50px;
+    cursor: default;
+    font-weight: bold;
+}
+
+header .container p {
+    font-size: 1rem;
+    color: var(--white);
+    margin: 0;
+    width: 200px;
+    position: relative;
+    left: 67%;
+    cursor: default;
+}
+
+/* class btn */
+header #btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    position: relative;
+    top: 20%;
+    right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header #btn:hover {
+    transform: scale(1.1);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+/* halaman about */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 50px;
+}
+
+#about .container .head {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .container .head h2 {
+    font-size: 2rem;
+    color: var(--black);
+    font-family: pacifico;
+    cursor: default;
+}
+
+#about .container .desc {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+#about .container .desc p {
+    font-size: 1rem;
+    color: var(--black);
+    cursor: default;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .triangle-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        /* border-top: 500px solid transparent; */
+        border-bottom: 600px solid transparent;
+        border-left: 430px solid blue;
+        transform: rotateY(180deg);
+    }
+    
+    .triangle-bottom {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 0;
+        height: 0;
+        /* border-top: 500px solid transparent; */
+        border-bottom: 410px solid transparent;
+        border-left: 301px solid blue;
+        transform: rotateY(180deg);
+    }
+
+    header .container {
+        width: 80%;
+        height: 50vh;
+        position: relative;
+        left: 10%;
+    }
+
+    header .container .desc {
+        width: 100%;
+        height: auto;
+    }
+
+    header .container h1 {
+        font-size: 1.2rem;
+        position: relative;
+        top: 10px;
+        right: 10%;
+    }
+
+    header .container h2 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    header .container p {
+        font-size: 1rem;
+        position: relative;
+        top: 0;
+        left: 35%;
+    }
+
+    header #btn {
+        position: relative;
+        top: 60%;
+    }
+
+    #about .container {
+        row-gap: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .triangle-top {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 0;
+        height: 0;
+        /* border-top: 500px solid transparent; */
+        border-bottom: 750px solid transparent;
+        border-left: 617px solid blue;
+        transform: rotateY(180deg);
+    }
+    
+    .triangle-bottom {
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        width: 0;
+        height: 0;
+        /* border-top: 500px solid transparent; */
+        border-bottom: 510px solid transparent;
+        border-left: 294px solid blue;
+        transform: rotateY(180deg);
+    }
+
+    header .container h1 {
+        font-size: 1.2rem;
+        position: relative;
+        top: 0;
+        right: 4%;
+    }
+
+    header .container h2 {
+        font-size: 2rem;
+        position: relative;
+        top: 0;
+        left: 28%;
+        width: 400px;
+    }
+
+    header .container p {
+        font-size: 1rem;
+        position: relative;
+        top: 0;
+        left: 63%;
+    }
+
+    header #btn {
+        position: relative;
+        top: 35%;
+    }
+}
