@@ -19,3 +19,9 @@ seeMore.forEach(btn => {
         window.location.href = "house.html";
     });
 });
+
+// fungsi untuk beralih ke halaman about
+const about = document.querySelector('.nav-item:nth-child(2) .nav-link');
+about.addEventListener('click', () => {
+    window.location.href = "about.html";
+});
