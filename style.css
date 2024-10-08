@@ -137,12 +137,14 @@ header .container .menu {
     border-radius: 50px;
     padding: 10px 0;
 }
+
 /* class form-control */
 header .container .menu .form-control {
     box-shadow: inset 3px 3px 5px var(--black);
 }
 
-header .container .menu .tipe .input-group {
+/* class input-grup */
+header .container .menu .input-group {
     border-radius: 5px;
     box-shadow: 5px 5px 10px var(--black);
 }
@@ -159,11 +161,6 @@ header .container .menu .btn {
     text-align: center;
     color: var(--black);
     margin: 0;
-}
-
-/* class tipe */
-header .container .menu .tipe {
-    margin-bottom: 10px;
 }
 
 /* tag h2 */
@@ -188,8 +185,8 @@ header .container .menu .btn p {
 
 /* tag button */
 header .container .menu button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 5px 5px 10px var(--black);
