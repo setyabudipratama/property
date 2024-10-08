@@ -66,21 +66,29 @@
             <div class="menu">
                 <div class="lokasi">
                     <h2>Location <i class="fa-solid fa-location-dot"></i></h2>
-                    <input type="text" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Location..">
+                    <input type="text" class="form-control mb-2" list="datalistOptions" id="exampleDataList"
+                        placeholder="Location..">
+                    <datalist id="datalistOptions">
+                        <option value="Switzerland">
+                    </datalist>
                 </div>
                 <div class="harga">
-                    <h2>Budget <i class="fa-solid fa-sack-dollar"></i></h2>
+                    <h2>Budget<i class="fa-solid fa-sack-dollar"></i></h2>
                     <div class="input-group mb-2">
                         <span class="input-group-text">$</span>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Budget..">
-                        <span class="input-group-text">.00</span>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected disabled>Choose...</option>
+                            <option value="1">12.999 - 31.999</option>
+                            <option value="2">32.999 - 63.999</option>
+                            <option value="3">64.000 + </option>
+                        </select>
                     </div>
                 </div>
                 <div class="tipe">
                     <h2>Type<i class="fa-solid fa-house"></i></h2>
-                    <div class="input-group">
-                        <select class="form-select" id="inputGroupSelect01">
-                            <option selected>Choose...</option>
+                    <div class="input-group mb-2">
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected disabled>Choose...</option>
                             <option value="1">Minimalism</option>
                             <option value="2">Modern</option>
                             <option value="3">Clasic</option>
