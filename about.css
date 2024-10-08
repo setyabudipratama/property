@@ -50,6 +50,18 @@ body {
     color: var(--white);
 }
 
+/* class fa-instagram, fa-linkedin-in */
+.navbar .fa-instagram,
+.navbar .fa-linkedin-in {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* class nav-link:focus */
+.navbar .nav-link:focus {
+    color: var(--white);
+}
+
 /* class btn */
 .navbar .btn {
     border-radius: 50px;
@@ -357,7 +369,7 @@ footer .sosial i {
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 600px solid transparent;
-        border-left: 432px solid blue;
+        border-left: 432px solid var(--blue);
         transform: rotateY(180deg);
     }
     
@@ -369,7 +381,7 @@ footer .sosial i {
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 410px solid transparent;
-        border-left: 303px solid blue;
+        border-left: 303px solid var(--blue);
         transform: rotateY(180deg);
     }
 
@@ -459,7 +471,7 @@ footer .sosial i {
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 750px solid transparent;
-        border-left: 617px solid blue;
+        border-left: 617px solid var(--blue);
         transform: rotateY(180deg);
     }
     
@@ -471,7 +483,7 @@ footer .sosial i {
         height: 0;
         /* border-top: 500px solid transparent; */
         border-bottom: 510px solid transparent;
-        border-left: 394px solid blue;
+        border-left: 394px solid var(--blue);
         transform: rotateY(180deg);
     }
 
