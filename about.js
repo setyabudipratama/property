@@ -4,8 +4,14 @@ header.addEventListener('click', () => {
     about.scrollIntoView({ behavior: 'smooth' });
 });
 
-// fungsi untuk beralih ke halaman utama
+// fungsi untuk ke halaman utama
 const utama = document.querySelector('.nav-item:first-child .nav-link');
 utama.addEventListener('click', () => {
     window.location.href = "index.html";
+});
+
+// fungsi untuk ke halaman shop 
+const shop = document.querySelector('.nav-item:nth-child(3) .nav-link');
+shop.addEventListener('click', () => {
+    window.location.href = "shop.html";
 });
