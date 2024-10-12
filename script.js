@@ -25,3 +25,9 @@ const about = document.querySelector('.nav-item:nth-child(2) .nav-link');
 about.addEventListener('click', () => {
     window.location.href = "about.html";
 });
+
+// fungsi untuk ke halaman shop
+const shop = document.querySelector('.nav-item:nth-child(3) .nav-link');
+shop.addEventListener('click', () => {
+    window.location.href = "shop.html";
+});
