@@ -1,0 +1,780 @@
+:root {
+    --white: #e6e6e6;
+    --black: #151515;
+    --blue: #0000ff;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid var(--black); */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--blue);
+    z-index: 1000;
+    padding: 5px 50px;
+}
+
+/* class fa-bars */
+.navbar .fa-bars {
+    color: var(--white);
+}
+
+.navbar .fa-house-chimney {
+    color: var(--white);
+}
+
+/* class nav-link */
+.navbar .nav-link {
+    color: var(--white);
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* class active */
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* class fa-instagram, fa-linkedin-in */
+.navbar .fa-instagram,
+.navbar .fa-linkedin-in {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* class nav-link:focus */
+.navbar .nav-link:focus {
+    color: var(--white);
+}
+
+/* class btn */
+.navbar .btn {
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 100px;
+    box-shadow: 5px 5px 10px var(--black);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: scale(1.1);
+    border: none;
+}
+
+
+/* halaman furniture */
+#furniture {
+    width: 100%;
+    height: 95vh;
+    margin-top: 50px;
+}
+
+/* class container */
+#furniture .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-height: 100%;
+}
+
+/* tag h2 */
+#furniture .container h2 {
+    font-size: 2rem;
+    font-family: pacifico;
+    margin-top: 10px;
+    display: flex;
+    align-self: center;
+}
+
+/* class content */
+#furniture .container .content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+}
+
+/* class left */
+#furniture .container .content .left {
+    width: 48%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    top: 5%;
+}
+
+/* class card */
+#furniture .container .content .left .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--black);
+}
+
+/* class desc */
+#furniture .container .content .left .card .desc {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* class image */
+#furniture .container .content .left .card .image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* tag img */
+#furniture .container .content .left .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#furniture .container .content .left .card .image:hover img {
+    transform: scale(1.2);
+}
+
+/* class desc */
+#furniture .container .content .left .card .desc {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* tag h5 */
+#furniture .container .content .left .card .desc h5 {
+    font-size: 1.1rem;
+    cursor: default;
+}
+
+/* tag p */
+#furniture .container .content .left .card .desc p {
+    font-size: 1rem;
+    cursor: default;
+    font-weight: bold;
+}
+
+/* class btn */
+#furniture .container .content .left .card .btn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#furniture .container .content .left .card .btn:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* class bottom */
+#furniture .container .content .left .bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* class card */
+#furniture .container .content .left .bottom .card {
+    width: 48%;
+    height: 150px;
+    flex-direction: row;
+    box-shadow: 5px 5px 10px var(--black);
+}
+
+/* class image */
+#furniture .container .content .left .bottom .card .image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* tag img */
+#furniture .container .content .left .bottom .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#furniture .container .content .left .bottom .card .image:hover img {
+    transform: scale(1.2);
+}
+
+/* class .desc */
+#furniture .container .content .left .bottom .card .desc {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tag h5 */
+#furniture .container .content .left .bottom .card .desc h5 {
+    font-size: 1rem;
+}
+
+/* tag p */
+#furniture .container .content .left .bottom .card .desc p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* class btn */
+#furniture .container .content .left .bottom .card .btn {
+    width: 90px;
+    height: 35px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#furniture .container .content .left .bottom .card .btn:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* class right */
+#furniture .container .content .right {
+    width: 48%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    top: 6%;
+}
+
+/* class card */
+#furniture .container .content .right .card {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--black);
+    border-radius: 10px;
+}
+
+/* class image */
+#furniture .container .content .right .card .image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* tag img */
+#furniture .container .content .right .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#furniture .container .content .right .card .image:hover img {
+    transform: scale(1.2);
+}
+
+/* class desc */
+#furniture .container .content .right .card .desc {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tag h5 */
+#furniture .container .content .right .card .desc h5 {
+    font-size: 1.2rem;
+}
+
+/* tag p */
+#furniture .container .content .right .card .desc p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* class btn */
+#furniture .container .content .right .card .btn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#furniture .container .content .right .card .btn:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+/* halaman other furniture */
+#other {
+    width: 100%;
+    height: 95vh;
+}
+
+/* class container */
+#other .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#other .container h2 {
+    font-size: 2rem;
+    font-family: pacifico;
+    margin-top: 10px;
+}
+
+/* class content */
+#other .container .content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+
+/* class card */
+#other .container .content .card {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--black);
+}
+
+/* class image */
+#other .container .content .card .image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* tag img */
+#other .container .content .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#other .container .content .card .image:hover img {
+    transform: scale(1.2);
+}
+
+/* class card-body */
+#other .container .content .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h5 */
+#other .container .content .card .card-body h5 {
+    font-size: 1rem;
+    text-align: center;
+    cursor: default;
+}
+
+/* tag p */
+#other .container .content .card .card-body p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+}
+
+/* class btn */
+#other .container .content .card .card-body .btn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3 ease;
+}
+
+#other .container .content .card .card-body .btn:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+
+/* halaman customer */
+#customer {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h2 */
+#customer h2 {
+    font-size: 2rem;
+    font-family: pacifico;
+}
+
+/* class container */
+#customer .container {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* class content */
+#customer .container .content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    column-gap: 10px;
+}
+
+/* class card */
+#customer .container .content .card {
+    width: 450px;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 0 0 auto;
+    box-shadow: 5px 5px 10px var(--black);
+    margin: 0 10px;
+}
+
+/* class image */
+#customer .container .content .card .image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+/* class .fa-quote-left */
+#customer .container .content .card .image .fa-quote-left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2rem;
+}
+
+/* tag img */
+#customer .container .content .card .image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* class star */
+#customer .container .content .card .image .star {
+    color: gold;
+}
+
+/* class desc */
+#customer .container .content .card .desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tag h5 */
+#customer .container .content .card .desc h5 {
+    font-size: 1.2rem;
+    color: var(--black);
+    cursor: default;
+}
+
+/* tag p */
+#customer .container .content .card .desc p {
+    font-size: 1rem;
+    color: var(--black);
+    cursor: default;
+    text-align: center;
+}
+
+/* class .fa-quote-right */
+#customer .container .content .card .desc .fa-quote-right {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 2rem;
+}
+
+
+/* halaman footer */
+footer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* class cipta */
+footer .cipta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 0;
+}
+
+/* tag h5 */
+footer .cipta h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--black);
+    cursor: default;
+}
+
+/* tag img */
+footer .cipta img {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* class contact */
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--black);
+}
+
+/* tag h2 */
+footer .contact h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* tag span */
+footer .contact span {
+    margin: 0;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+/* tag i */
+footer .contact i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+/* class sosial */
+footer .sosial {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--black);
+}
+
+/* tag h2 */
+footer .sosial h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* tag span */
+footer .sosial span {
+    margin: 0;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+/* tag i */
+footer .sosial i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 767px) {
+    #furniture .container {
+        width: 90%;
+        height: 70vh;
+    }
+
+    #furniture .container .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #furniture .container .content .left,
+    #furniture .container .content .right {
+
+        flex-basis: 100%; /* jika properti flex-wrap tidak berfungsi 
+        maka properti flex-basis akan berubah menjadi 100% */
+
+        position: relative;
+        top: 0;
+        margin: 0;
+    }
+
+    #furniture .container .content .left .card,
+    #furniture .container .content .right .card {
+        margin: 0;
+    }
+
+    #other,
+    #customer {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #other .container .content,
+    #customer .container .content {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #other .container .content .card {
+        width: 200px;
+        height: 300px;
+    }
+
+    #customer .container .content .card {
+        width: 300px;
+        height: 200px;
+    }
+
+    #customer .container .content .card .image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #customer .container .content .card .image .star {
+        font-size: 0.8rem;
+    }
+
+    #customer .container .content .card .desc h5 {
+        font-size: 1rem;
+    }
+
+    #customer .container .content .card .desc p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 5px;
+    }
+
+    footer .cipta {
+        width: 40%;
+    }
+
+    footer .cipta img {
+        width: 45px;
+        height: 45px;
+    }
+
+    footer .cipta h5 {
+        font-size: 0.7rem;
+    }
+
+    footer .contact,
+    footer .sosial {
+        gap: 0;
+        width: 35%;
+    }
+
+    footer span {
+        font-size: 0.8rem;
+    }
+}
