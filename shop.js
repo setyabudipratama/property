@@ -27,3 +27,9 @@ const purple = document.querySelector('#furniture .left .bottom .card:nth-child(
 purple.addEventListener('click', () => {
     window.location.href = "purple.html";
 });
+
+// fungsi untuk ke halaman beige sofa 1
+const beige2 = document.querySelector('#furniture .right .desc button');
+beige2.addEventListener('click', () => {
+    window.location.href = "beigeright.html";
+});
