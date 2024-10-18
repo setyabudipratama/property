@@ -15,3 +15,15 @@ const darkgrey = document.querySelector('#furniture .left .card button');
 darkgrey.addEventListener('click', () => {
     window.location.href = "darkgrey.html";
 });
+
+// fungsi untuk ke halaman beige sofa 1
+const beige1 = document.querySelector('#furniture .left .bottom .card .desc button');
+beige1.addEventListener('click', () => {
+    window.location.href = "beige.html";
+});
+
+// fungsi untuk ke halaman beige sofa 1
+const purple = document.querySelector('#furniture .left .bottom .card:nth-child(2) .desc button');
+purple.addEventListener('click', () => {
+    window.location.href = "purple.html";
+});
