@@ -9,3 +9,9 @@ const about = document.querySelector('.nav-item:nth-child(2) .nav-link');
 about.addEventListener('click', () => {
     window.location.href = "about.html";
 });
+
+// fungsi untuk ke halaman dark grey sofa
+const darkgrey = document.querySelector('#furniture .left .card button');
+darkgrey.addEventListener('click', () => {
+    window.location.href = "darkgrey.html";
+});
