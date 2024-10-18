@@ -277,12 +277,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: none; /* coming soon */
+    box-shadow: 5px 5px 10px var(--black);
     transition: all 0.3s ease;
 }
 
 #furniture .container .content .left .bottom .card .btn:hover {
-    transform: none; /* coming soon */
+    transform: scale(1.1);
     background-color: var(--blue);
     color: var(--white);
 }
