@@ -278,9 +278,11 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: none; /* coming soon */
+    transition: all 0.3s ease;
 }
 
 #furniture .container .content .left .bottom .card .btn:hover {
+    transform: none; /* coming soon */
     background-color: var(--blue);
     color: var(--white);
 }
