@@ -720,6 +720,12 @@ footer .sosial i {
         height: 70vh;
     }
 
+    #furniture .container h2,
+    #other .container h2,
+    #customer .container h2 {
+        font-size: 1.5rem;
+    }
+
     #furniture .container .content {
         display: flex;
         justify-content: center;
