@@ -209,6 +209,10 @@ body {
     box-shadow: none;
 }
 
+#furniture .container .content .left .card .btn:active {
+    transform: scale(0.9);
+}
+
 /* class bottom */
 #furniture .container .content .left .bottom {
     width: 100%;
@@ -285,6 +289,10 @@ body {
     transform: scale(1.1);
     background-color: var(--blue);
     color: var(--white);
+}
+
+#furniture .container .content .left .bottom .card .btn:active {
+    transform: scale(0.9);
 }
 
 /* class right */
@@ -366,6 +374,10 @@ body {
     transform: scale(1.1);
     background-color: var(--blue);
     color: var(--white);
+}
+
+#furniture .container .content .right .card .btn:active {
+    transform: scale(0.9);
 }
 
 
@@ -466,12 +478,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3 ease;
+    box-shadow: 5px 5px 10px var(--black);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #other .container .content .card .card-body .btn:hover {
+    transform: scale(1.1);
     color: var(--white);
     background-color: var(--blue);
+    box-shadow: none;
+}
+
+#other .container .content .card .card-body .btn:active {
+    transform: scale(0.9);
 }
 
 
@@ -505,7 +525,7 @@ body {
 /* class content */
 #customer .container .content {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     overflow-x: auto;
     column-gap: 10px;
