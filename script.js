@@ -31,3 +31,8 @@ const shop = document.querySelector('.nav-item:nth-child(3) .nav-link');
 shop.addEventListener('click', () => {
     window.location.href = "shop.html";
 });
+
+const shopBtn = document.getElementById('shopBtn');
+shopBtn.addEventListener('click', () => {
+    window.location.href = "shop.html";
+});
