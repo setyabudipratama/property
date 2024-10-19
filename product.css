@@ -116,6 +116,10 @@ body {
     box-shadow: none;
 }
 
+#product #back:active {
+    transform: scale(0.9);
+}
+
 #product .container {
     width: 90%;
     height: 80%;
@@ -218,6 +222,10 @@ body {
 #product .container .desc .aksi button:hover {
     transform: scale(1.1);
     box-shadow: none;
+}
+
+#product .container .desc .aksi button:active {
+    transform: scale(0.9);
 }
 
 #product .container .desc .aksi .fa-cart-shopping {
