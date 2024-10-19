@@ -33,3 +33,33 @@ const beige2 = document.querySelector('#furniture .right .desc button');
 beige2.addEventListener('click', () => {
     window.location.href = "beigeright.html";
 });
+
+// fungsi untuk ke halaman perabot kamar
+const perabotKamar = document.querySelector('#other .content .card:first-child button');
+perabotKamar.addEventListener('click', () => {
+    window.location.href = "perabotKamar.html";
+});
+
+// fungsi untuk ke halaman lemari
+const lemari = document.querySelector('#other .content .card:nth-child(2) button');
+lemari.addEventListener('click', () => {
+    window.location.href = "lemari.html";
+});
+
+// fungsi untuk ke halaman perabot bayi
+const perabotBayi = document.querySelector('#other .content .card:nth-child(3) button');
+perabotBayi.addEventListener('click', () => {
+    window.location.href = "perabotBayi.html";
+});
+
+// fungsi untuk ke halaman perabot kamar 2
+const perabotKamar2 = document.querySelector('#other .content .card:nth-child(4) button');
+perabotKamar2.addEventListener('click', () => {
+    window.location.href = "perabotKamar2.html";
+});
+
+// fungsi untuk ke halaman lampu kerja
+const lampuKerja = document.querySelector('#other .content .card:nth-child(5) button');
+lampuKerja.addEventListener('click', () => {
+    window.location.href = "lampuKerja.html";
+});
