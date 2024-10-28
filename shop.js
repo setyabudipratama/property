@@ -64,6 +64,8 @@ lampuKerja.addEventListener('click', () => {
     window.location.href = "lampuKerja.html";
 });
 
+// rubah tinggi content untuk responsive
+const contentOther = document.querySelector('#other .content');
 
 // rubah footer
 const footer = document.querySelector('footer');
@@ -81,6 +83,7 @@ spanFooter.forEach(span => {
 
 function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
+        contentOther.style.height = '50vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
