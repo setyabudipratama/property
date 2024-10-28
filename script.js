@@ -36,3 +36,45 @@ const shopBtn = document.getElementById('shopBtn');
 shopBtn.addEventListener('click', () => {
     window.location.href = "shop.html";
 });
+
+
+// rubah widht text header
+const textHeader = document.querySelector('header .text');
+textHeader.style.width = '100%';
+
+// rubah tinggi vewport
+const viewportShop = document.getElementById('shop');
+viewportShop.style.height = '100vh';
+
+// rubah footer
+const footer = document.querySelector('footer');
+Object.assign(footer.style, {
+    justifyContent: 'space-around',
+});
+
+const h5Footer = document.querySelector('footer h5');
+h5Footer.style.fontSize = '1rem';
+
+const spanFooter = document.querySelectorAll('footer span');
+spanFooter.forEach(span => {
+    span.style.fontSize = '0.8rem';
+});
+
+function applyResponsiveStyles () {
+    if (window.innerWidth < 767) {
+        textHeader.style.width = '100%';
+        viewportShop.style.height = '80vh';
+        Object.assign(footer.style, {
+            justifyContent: 'center',
+            gap: '0',
+        });
+        h5Footer.style.fontSize = '0.6rem';
+        spanFooter.forEach(span => {
+            span.style.fontSize = '0.6rem';
+        });
+    };
+};
+
+// saat layar mengubah ukuran
+applyResponsiveStyles();
+window.addEventListener('resize', applyResponsiveStyles);
