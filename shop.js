@@ -63,3 +63,31 @@ const lampuKerja = document.querySelector('#other .content .card:nth-child(5) bu
 lampuKerja.addEventListener('click', () => {
     window.location.href = "lampuKerja.html";
 });
+
+
+// rubah footer
+const footer = document.querySelector('footer');
+Object.assign(footer.style, {
+    justifyContent: 'space-around',
+});
+
+const h5Footer = document.querySelector('footer h5');
+h5Footer.style.fontSize = '1rem';
+
+const spanFooter = document.querySelectorAll('footer span');
+spanFooter.forEach(span => {
+    span.style.fontSize = '0.8rem';
+});
+
+function applyResponsiveStyles () {
+    if (window.innerWidth < 767) {
+        Object.assign(footer.style, {
+            justifyContent: 'center',
+            gap: '0',
+        });
+        h5Footer.style.fontSize = '0.6rem';
+        spanFooter.forEach(span => {
+            span.style.fontSize = '0.6rem';
+        });
+    };
+};
