@@ -67,6 +67,12 @@ lampuKerja.addEventListener('click', () => {
 // rubah tinggi halaman furniture
 const furniture = document.getElementById('furniture');
 
+// rubah tinggi container
+const containerFurniture = document.querySelector('#furniture .container');
+
+// rubah tinggi content
+const contentFurniture = document.querySelector('#furniture .container .content');
+
 // rubah tinggi card right
 const cardRight = document.querySelector('#furniture .container .right');
 
@@ -90,9 +96,11 @@ spanFooter.forEach(span => {
 function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
         Object.assign(furniture.style, {
-            height: '80vh',
-            marginTop: '50px', 
+            height: '90vh',
+            marginTop: '50px',
         });
+        containerFurniture.style.height = '90vh';
+        contentFurniture.style.height = '100vh';
         cardRight.style.height = '30vh';
         contentOther.style.height = '50vh';
         Object.assign(footer.style, {
