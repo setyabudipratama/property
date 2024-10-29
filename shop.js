@@ -113,7 +113,7 @@ function applyResponsiveStyles () {
         cardRight.style.height = '30vh';
         cardRightItem.style.height = '220px';
         contentOther.style.height = '50vh';
-        other.style.height = '70vh';
+        other.style.height = '60vh';
         customer.style.height = '50vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
