@@ -17,6 +17,9 @@ shop.addEventListener('click', () => {
 });
 
 
+// rubah border radius bottom triangle bottom
+const triangleBottom = document.querySelector('header .triangle-bottom');
+
 // rubah footer
 const footer = document.querySelector('footer');
 Object.assign(footer.style, {
@@ -33,6 +36,7 @@ spanFooter.forEach(span => {
 
 function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
+        triangleBottom.style.borderBottom = '350px solid transparent';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
