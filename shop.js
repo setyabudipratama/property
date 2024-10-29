@@ -94,3 +94,7 @@ function applyResponsiveStyles () {
         });
     };
 };
+
+// saat layar mengubah ukuran
+applyResponsiveStyles();
+window.addEventListener('resize', applyResponsiveStyles);
