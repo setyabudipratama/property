@@ -73,11 +73,20 @@ const containerFurniture = document.querySelector('#furniture .container');
 // rubah tinggi content
 const contentFurniture = document.querySelector('#furniture .container .content');
 
-// rubah tinggi card right
+// rubah tinggi right
 const cardRight = document.querySelector('#furniture .container .right');
 
-// rubah tinggi content untuk responsive
+// rubah tinggi card right
+const cardRightItem = document.querySelector('#furniture .container .right .card');
+
+// rubah tinggi content
 const contentOther = document.querySelector('#other .content');
+
+// rubah tinggi halaman other
+const other = document.getElementById('other');
+
+// rubah tinggi halaman customer
+const customer = document.getElementById('customer');
 
 // rubah footer
 const footer = document.querySelector('footer');
@@ -97,12 +106,15 @@ function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
         Object.assign(furniture.style, {
             height: '90vh',
-            marginTop: '50px',
+            marginTop: '60px',
         });
         containerFurniture.style.height = '90vh';
         contentFurniture.style.height = '100vh';
         cardRight.style.height = '30vh';
+        cardRightItem.style.height = '220px';
         contentOther.style.height = '50vh';
+        other.style.height = '70vh';
+        customer.style.height = '50vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
@@ -111,7 +123,14 @@ function applyResponsiveStyles () {
         spanFooter.forEach(span => {
             span.style.fontSize = '0.6rem';
         });
-    };
+    } else if (window.innerWidth >= 767 && window.innerWidth < 1024) {
+        furniture.style.height = '50vh';
+        contentFurniture.style.height = '50vh';
+        containerFurniture.style.height = '50vh';
+        contentOther.style.height = '50vh';
+        other.style.height = '50vh';
+        customer.style.height = '50vh';
+    }
 };
 
 // saat layar mengubah ukuran
