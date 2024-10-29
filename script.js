@@ -45,9 +45,14 @@ textHeader.style.width = '100%';
 // rubah lebar formSelect header
 const inputGroupHeader = document.querySelector('header .container .input-group');
 
-// rubah tinggi vewport
+// rubah tinggi vewport benefit
+const viewportBenefit = document.getElementById('benefit');
+
+// rubah tinggi vewport shop
 const viewportShop = document.getElementById('shop');
-viewportShop.style.height = '100vh';
+
+// rubah tinggi vewport testimoni
+const viewportTestimoni = document.getElementById('testimoni');
 
 // rubah footer
 const footer = document.querySelector('footer');
@@ -67,6 +72,7 @@ function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
         textHeader.style.width = '100%';
         inputGroupHeader.style.width = '85%';
+        viewportBenefit.style.height = '100vh';
         viewportShop.style.height = '80vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
@@ -76,7 +82,11 @@ function applyResponsiveStyles () {
         spanFooter.forEach(span => {
             span.style.fontSize = '0.6rem';
         });
-    };
+    } else if (window.innerWidth >= 767 && window.innerWidth < 1024) {
+        viewportBenefit.style.height = '80vh';
+        viewportShop.style.height = '80vh';
+        viewportTestimoni.style.height = '50vh';
+    }
 };
 
 // saat layar mengubah ukuran
