@@ -64,6 +64,12 @@ lampuKerja.addEventListener('click', () => {
     window.location.href = "lampuKerja.html";
 });
 
+// rubah tinggi halaman furniture
+const furniture = document.getElementById('furniture');
+
+// rubah tinggi card right
+const cardRight = document.querySelector('#furniture .container .right');
+
 // rubah tinggi content untuk responsive
 const contentOther = document.querySelector('#other .content');
 
@@ -83,6 +89,11 @@ spanFooter.forEach(span => {
 
 function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
+        Object.assign(furniture.style, {
+            height: '80vh',
+            marginTop: '50px', 
+        });
+        cardRight.style.height = '30vh';
         contentOther.style.height = '50vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
