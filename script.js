@@ -42,6 +42,9 @@ shopBtn.addEventListener('click', () => {
 const textHeader = document.querySelector('header .text');
 textHeader.style.width = '100%';
 
+// rubah lebar formSelect header
+const inputGroupHeader = document.querySelector('header .container .input-group');
+
 // rubah tinggi vewport
 const viewportShop = document.getElementById('shop');
 viewportShop.style.height = '100vh';
@@ -63,6 +66,7 @@ spanFooter.forEach(span => {
 function applyResponsiveStyles () {
     if (window.innerWidth < 767) {
         textHeader.style.width = '100%';
+        inputGroupHeader.style.width = '85%';
         viewportShop.style.height = '80vh';
         Object.assign(footer.style, {
             justifyContent: 'center',
